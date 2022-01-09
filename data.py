@@ -44,8 +44,7 @@ speed = 5
 bg_img = pygame.image.load("Assets/Game Background/menu_bg2.png")
 
 bg_img_settings = pygame.image.load("Assets/Game Background/settings_bg.jpeg")
-bg_img_settings = pygame.transform.scale(
-    bg_img_settings, (SCREEN_WIDTH, SCREEN_HEIGHT))
+bg_img_settings = pygame.transform.scale(bg_img_settings, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 space_bg = pygame.image.load("Assets/Game Background/game_bg.gif")
 space_bg = pygame.transform.scale(space_bg, (SCREEN_WIDTH, SCREEN_WIDTH))
@@ -83,3 +82,6 @@ back_btn_rect = back_btn.get_rect(center=(100, 470))
 font = font
 text = font.render(f"Score: {SCORE}", True, (255, 255, 255))
 text = resize_img(text, 50)
+
+game_over = pygame.image.load("Assets/Game Background/game_over_bg.png")
+game_over = pygame.transform.scale(game_over, (SCREEN_WIDTH, SCREEN_HEIGHT))
